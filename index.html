@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Display</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="heading">SELECT YOUR SECTION</h1>
+    <div class="tab-container">
+        <div class="tab">
+            <a href="#" class="ta active" id="men-tab">Men</a>
+            <a href="#" class="ta" id="women-tab">Women</a>
+            <a href="#" class="ta" id="kids-tab">Kids</a>
+        </div>
+    </div>
+    <br>
+
+    <div class="products" id="men-products">
+        <!-- Men's product data will be displayed here -->
+    </div>
+    <div class="products" id="women-products" style="display: none;">
+        <!-- Women's product data will be displayed here -->
+    </div>
+    <div class="products" id="kids-products" style="display: none;">
+        <!-- Kids' product data will be displayed here -->
+    </div>
+</div>
+
+<!-- Loading elements -->
+<div id="loading-men">Loading Men's products...</div>
+<div id="loading-women" style="display: none;">Loading Women's products...</div>
+<div id="loading-kids" style="display: none;">Loading Kids' products...</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
